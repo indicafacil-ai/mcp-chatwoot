@@ -1,0 +1,8 @@
+[publish]
+registry = "https://registry.npmjs.org"
+
+[test]
+coverage = true
+coverageSkipTestFiles = true
+coveragePathIgnorePatterns = ["src/tools/**"]
+coverageThreshold = { lines = 0.85, functions = 0.85 }
