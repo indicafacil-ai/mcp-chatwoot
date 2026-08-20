@@ -167,27 +167,27 @@ Add to your `.vscode/mcp.json`:
 
 `webhooks_list`, `webhooks_create`, `webhooks_update`, `webhooks_delete`
 
-### Kanban Boards (9) — [apps-id.indicafacil.app]
+### Kanban Boards (9) — [indicafacil.ai]
 
 `kanban_boards_list`, `kanban_boards_create`, `kanban_boards_get`, `kanban_boards_update`, `kanban_boards_delete`, `kanban_boards_get_automation_settings`, `kanban_boards_update_automation_settings`, `kanban_boards_get_members`, `kanban_boards_set_members`
 
-### Kanban Steps (5) — [apps-id.indicafacil.app]
+### Kanban Steps (5) — [indicafacil.ai]
 
 `kanban_steps_list`, `kanban_steps_create`, `kanban_steps_get`, `kanban_steps_update`, `kanban_steps_delete`
 
-### Kanban Tasks (7) — [apps-id.indicafacil.app]
+### Kanban Tasks (7) — [indicafacil.ai]
 
 `kanban_tasks_list`, `kanban_tasks_create`, `kanban_tasks_get`, `kanban_tasks_update`, `kanban_tasks_delete`, `kanban_tasks_move`
 
-### Kanban Audit Events (2) — [apps-id.indicafacil.app]
+### Kanban Audit Events (2) — [indicafacil.ai]
 
 `kanban_audit_events_list`, `kanban_audit_events_get`
 
-### Kanban Preferences (1) — [apps-id.indicafacil.app]
+### Kanban Preferences (1) — [indicafacil.ai]
 
 `kanban_preferences_get`
 
-### Scheduled Messages (4) — [apps-id.indicafacil.app]
+### Scheduled Messages (4) — [indicafacil.ai]
 
 `scheduled_messages_list`, `scheduled_messages_create`, `scheduled_messages_update`, `scheduled_messages_delete`
 
