@@ -4,7 +4,7 @@
   "description": "MCP server for the Chatwoot API (indicafacil.ai fork) — provides tools for managing conversations, contacts, inboxes, teams, kanban boards, and more.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolasdasilvaesilva/mcp-chatwoot.git"
+    "url": "git+https://github.com/indicafacil-ai/mcp-chatwoot.git"
   },
   "license": "MIT",
   "publishConfig": {
@@ -52,6 +52,6 @@
   },
   "homepage": "https://indicafacil.ai",
   "bugs": {
-    "url": "https://github.com/nicolasdasilvaesilva/mcp-chatwoot/issues"
+    "url": "https://github.com/indicafacil-ai/mcp-chatwoot/issues"
   }
 }
