@@ -11,7 +11,8 @@ export const register: RegisterFn = (server, client) => {
     "scheduled_messages_list",
     {
       title: "List Scheduled Messages",
-      description: "[apps-id.indicafacil.app] List scheduled messages for a conversation",
+      description:
+        "[apps-id.indicafacil.app] List scheduled messages for a conversation",
       inputSchema: {
         account_id: accountId,
         conversation_id: z.number().describe("Conversation ID"),

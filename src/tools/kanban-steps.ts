@@ -30,7 +30,8 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_create",
     {
       title: "Create Kanban Step",
-      description: "[apps-id.indicafacil.app] Create a new step (column) in a kanban board",
+      description:
+        "[apps-id.indicafacil.app] Create a new step (column) in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -55,7 +56,8 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_get",
     {
       title: "Get Kanban Step",
-      description: "[apps-id.indicafacil.app] Get a specific step in a kanban board",
+      description:
+        "[apps-id.indicafacil.app] Get a specific step in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -104,7 +106,8 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_delete",
     {
       title: "Delete Kanban Step",
-      description: "[apps-id.indicafacil.app] Delete a step from a kanban board",
+      description:
+        "[apps-id.indicafacil.app] Delete a step from a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -116,6 +119,31 @@ export const register: RegisterFn = (server, client) => {
       await client.delete(`${base(account_id, board_id)}/${step_id}`);
       return {
         content: [{ type: "text", text: "Kanban step deleted successfully" }],
+      };
+    },
+  );
+
+  server.registerTool(
+    "kanban_steps_reorder",
+    {
+      title: "Reorder Board Steps",
+      description:
+        "[apps-id.indicafacil.app] Set the left-to-right order of a funnel's steps. steps_order must list EVERY step id of the board exactly once: a partial list is rejected.",
+      inputSchema: {
+        account_id: accountId,
+        board_id: z.number().describe("Kanban board ID"),
+        steps_order: z
+          .array(z.number())
+          .describe("Every step id of the board, in the desired order"),
+      },
+    },
+    async ({ account_id, board_id, steps_order }) => {
+      const result = await client.post(
+        `${base(account_id, board_id)}/reorder`,
+        { steps_order },
+      );
+      return {
+        content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
       };
     },
   );

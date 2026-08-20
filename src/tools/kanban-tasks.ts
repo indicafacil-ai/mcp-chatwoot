@@ -32,7 +32,8 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_create",
     {
       title: "Create Kanban Task",
-      description: "[apps-id.indicafacil.app] Create a new task in a kanban board",
+      description:
+        "[apps-id.indicafacil.app] Create a new task in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),

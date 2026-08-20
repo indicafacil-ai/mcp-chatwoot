@@ -32,7 +32,8 @@ export const register: RegisterFn = (server, client) => {
     "kanban_audit_events_get",
     {
       title: "Get Kanban Audit Event",
-      description: "[apps-id.indicafacil.app] Get a specific audit event from a kanban task",
+      description:
+        "[apps-id.indicafacil.app] Get a specific audit event from a kanban task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task ID"),
