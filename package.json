@@ -1,10 +1,10 @@
 {
-  "name": "@indica-facil/mcp-chatwoot",
+  "name": "@indicafacil/mcp-chatwoot",
   "version": "0.1.0",
   "description": "MCP server for the Chatwoot API (indicafacil.ai fork) — provides tools for managing conversations, contacts, inboxes, teams, kanban boards, and more.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/indica-facil/mcp-chatwoot"
+    "url": "git+https://github.com/nicolasdasilvaesilva/mcp-chatwoot.git"
   },
   "license": "MIT",
   "publishConfig": {
@@ -49,5 +49,9 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1",
     "zod": "^4.3.6"
+  },
+  "homepage": "https://indicafacil.ai",
+  "bugs": {
+    "url": "https://github.com/nicolasdasilvaesilva/mcp-chatwoot/issues"
   }
 }

@@ -1,7 +1,7 @@
-# @indica-facil/mcp-chatwoot
+# @indicafacil/mcp-chatwoot
 
-[![npm version](https://img.shields.io/npm/v/@indica-facil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indica-facil/mcp-chatwoot)
-[![npm downloads](https://img.shields.io/npm/dm/@indica-facil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indica-facil/mcp-chatwoot)
+[![npm version](https://img.shields.io/npm/v/@indicafacil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indicafacil/mcp-chatwoot)
+[![npm downloads](https://img.shields.io/npm/dm/@indicafacil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indicafacil/mcp-chatwoot)
 
 A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server that exposes the full [Chatwoot](https://www.chatwoot.com/) API — including [indicafacil.ai](https://indicafacil.ai) exclusive features — as **147 tools** for use with AI assistants like Claude, VS Code Copilot, and others.
 
