@@ -10,8 +10,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_boards_list",
     {
       title: "List Kanban Boards",
-      description:
-        "[apps-id.indicafacil.app] List all kanban boards in the account",
+      description: "[indicafacil.ai] List all kanban boards in the account",
       inputSchema: {
         account_id: accountId,
         page: z.number().optional().describe("Page number"),
@@ -30,7 +29,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_boards_create",
     {
       title: "Create Kanban Board",
-      description: "[apps-id.indicafacil.app] Create a new kanban board",
+      description: "[indicafacil.ai] Create a new kanban board",
       inputSchema: {
         account_id: accountId,
         name: z.string().describe("Board name"),
@@ -49,7 +48,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_boards_get",
     {
       title: "Get Kanban Board",
-      description: "[apps-id.indicafacil.app] Get a specific kanban board",
+      description: "[indicafacil.ai] Get a specific kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -68,7 +67,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_boards_update",
     {
       title: "Update Kanban Board",
-      description: "[apps-id.indicafacil.app] Update a kanban board",
+      description: "[indicafacil.ai] Update a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -92,7 +91,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_boards_delete",
     {
       title: "Delete Kanban Board",
-      description: "[apps-id.indicafacil.app] Delete a kanban board",
+      description: "[indicafacil.ai] Delete a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -112,7 +111,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Update Board Agents",
       description:
-        "[apps-id.indicafacil.app] Update the agents assigned to a kanban board",
+        "[indicafacil.ai] Update the agents assigned to a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -137,7 +136,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Update Board Inboxes",
       description:
-        "[apps-id.indicafacil.app] Set which inboxes feed this funnel. A card is created for a conversation only when its inbox is bound here, so a funnel with no inbox never receives cards. Replaces the whole set.",
+        "[indicafacil.ai] Set which inboxes feed this funnel. A card is created for a conversation only when its inbox is bound here, so a funnel with no inbox never receives cards. Replaces the whole set.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -164,7 +163,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Toggle Board Favorite",
       description:
-        "[apps-id.indicafacil.app] Toggle this funnel as a favorite for the CURRENT user. Returns the user's full list of favorite board ids.",
+        "[indicafacil.ai] Toggle this funnel as a favorite for the CURRENT user. Returns the user's full list of favorite board ids.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -186,7 +185,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Board Conversations",
       description:
-        "[apps-id.indicafacil.app] Conversations from this funnel's inboxes, for linking one to a card. Open conversations come first. Returns an empty list when no inbox is bound.",
+        "[indicafacil.ai] Conversations from this funnel's inboxes, for linking one to a card. Open conversations come first. Returns an empty list when no inbox is bound.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),

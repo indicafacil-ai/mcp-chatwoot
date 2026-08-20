@@ -26,7 +26,7 @@ describe("Server", () => {
     expect(Object.keys(tools).length).toBe(147);
   });
 
-  test("has apps-id.indicafacil.app exclusive tools", () => {
+  test("has indicafacil.ai exclusive tools", () => {
     const client = new ChatwootClient(
       "https://chatwoot.example.com",
       "test-token",

@@ -31,7 +31,7 @@ export const register: RegisterFn = (server, client) => {
       nome,
       {
         title: titulo,
-        description: `[apps-id.indicafacil.app] ${descricao}`,
+        description: `[indicafacil.ai] ${descricao}`,
         inputSchema: { account_id: accountId, ...filtros, ...extra },
         annotations: { readOnlyHint: true },
       },

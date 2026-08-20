@@ -12,7 +12,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Scheduled Messages",
       description:
-        "[apps-id.indicafacil.app] List scheduled messages for a conversation",
+        "[indicafacil.ai] List scheduled messages for a conversation",
       inputSchema: {
         account_id: accountId,
         conversation_id: z.number().describe("Conversation ID"),
@@ -32,7 +32,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Create Scheduled Message",
       description:
-        "[apps-id.indicafacil.app] Schedule a message to be sent later in a conversation",
+        "[indicafacil.ai] Schedule a message to be sent later in a conversation",
       inputSchema: {
         account_id: accountId,
         conversation_id: z.number().describe("Conversation ID"),
@@ -58,7 +58,7 @@ export const register: RegisterFn = (server, client) => {
     "scheduled_messages_update",
     {
       title: "Update Scheduled Message",
-      description: "[apps-id.indicafacil.app] Update a scheduled message",
+      description: "[indicafacil.ai] Update a scheduled message",
       inputSchema: {
         account_id: accountId,
         conversation_id: z.number().describe("Conversation ID"),
@@ -83,7 +83,7 @@ export const register: RegisterFn = (server, client) => {
     "scheduled_messages_delete",
     {
       title: "Delete Scheduled Message",
-      description: "[apps-id.indicafacil.app] Delete a scheduled message",
+      description: "[indicafacil.ai] Delete a scheduled message",
       inputSchema: {
         account_id: accountId,
         conversation_id: z.number().describe("Conversation ID"),

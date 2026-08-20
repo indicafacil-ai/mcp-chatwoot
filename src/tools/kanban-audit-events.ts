@@ -12,7 +12,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Kanban Audit Events",
       description:
-        "[apps-id.indicafacil.app] List audit events (activity log) for a kanban task",
+        "[indicafacil.ai] List audit events (activity log) for a kanban task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task ID"),
@@ -33,7 +33,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Get Kanban Audit Event",
       description:
-        "[apps-id.indicafacil.app] Get a specific audit event from a kanban task",
+        "[indicafacil.ai] Get a specific audit event from a kanban task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task ID"),

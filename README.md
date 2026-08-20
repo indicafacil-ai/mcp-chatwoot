@@ -3,14 +3,14 @@
 [![npm version](https://img.shields.io/npm/v/@indica-facil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indica-facil/mcp-chatwoot)
 [![npm downloads](https://img.shields.io/npm/dm/@indica-facil/mcp-chatwoot.svg)](https://www.npmjs.com/package/@indica-facil/mcp-chatwoot)
 
-A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server that exposes the full [Chatwoot](https://www.chatwoot.com/) API — including [apps-id.indicafacil.app](https://apps-id.indicafacil.app) exclusive features — as **129 tools** for use with AI assistants like Claude, VS Code Copilot, and others.
+A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server that exposes the full [Chatwoot](https://www.chatwoot.com/) API — including [indicafacil.ai](https://indicafacil.ai) exclusive features — as **147 tools** for use with AI assistants like Claude, VS Code Copilot, and others.
 
 ## Features
 
-- **129 tools** covering all Chatwoot API endpoints
+- **147 tools** covering all Chatwoot API endpoints
 - Account, Agents, Contacts, Conversations, Messages, Inboxes, Teams, and more
 - Reports (v1 & v2), Help Center, Automation Rules, Custom Attributes, Custom Filters
-- **[apps-id.indicafacil.app] exclusive**: Kanban Boards, Kanban Steps, Kanban Tasks, Kanban Audit Events, Kanban Preferences, Scheduled Messages
+- **[indicafacil.ai] exclusive**: Kanban Boards, Kanban Steps, Kanban Tasks, Kanban Audit Events, Kanban Preferences, Scheduled Messages
 - Proper MCP tool annotations (`readOnlyHint`, `destructiveHint`, `idempotentHint`)
 - Multi-account support (`account_id` is a per-tool argument)
 - stdio transport (compatible with Claude Desktop, VS Code, and any MCP client)
@@ -85,7 +85,7 @@ Add to your `.vscode/mcp.json`:
 }
 ```
 
-## Available Tools (129)
+## Available Tools (147)
 
 ### Account (2)
 
@@ -169,23 +169,35 @@ Add to your `.vscode/mcp.json`:
 
 ### Kanban Boards (9) — [indicafacil.ai]
 
-`kanban_boards_list`, `kanban_boards_create`, `kanban_boards_get`, `kanban_boards_update`, `kanban_boards_delete`, `kanban_boards_get_automation_settings`, `kanban_boards_update_automation_settings`, `kanban_boards_get_members`, `kanban_boards_set_members`
+`kanban_boards_list`, `kanban_boards_create`, `kanban_boards_get`, `kanban_boards_update`, `kanban_boards_delete`, `kanban_boards_update_agents`, `kanban_boards_update_inboxes`, `kanban_boards_toggle_favorite`, `kanban_boards_conversations`
 
-### Kanban Steps (5) — [indicafacil.ai]
+### Kanban Steps (6) — [indicafacil.ai]
 
-`kanban_steps_list`, `kanban_steps_create`, `kanban_steps_get`, `kanban_steps_update`, `kanban_steps_delete`
+`kanban_steps_list`, `kanban_steps_create`, `kanban_steps_get`, `kanban_steps_update`, `kanban_steps_delete`, `kanban_steps_reorder`
 
-### Kanban Tasks (7) — [indicafacil.ai]
+### Kanban Tasks (6) — [indicafacil.ai]
 
 `kanban_tasks_list`, `kanban_tasks_create`, `kanban_tasks_get`, `kanban_tasks_update`, `kanban_tasks_delete`, `kanban_tasks_move`
+
+### Kanban Task Products (4) — [indicafacil.ai]
+
+`kanban_task_products_list`, `kanban_task_products_create`, `kanban_task_products_update`, `kanban_task_products_delete`
+
+### Kanban Task Comments (4) — [indicafacil.ai]
+
+`kanban_task_comments_list`, `kanban_task_comments_create`, `kanban_task_comments_update`, `kanban_task_comments_delete`
+
+### Kanban Products (5) — [indicafacil.ai]
+
+`kanban_products_list`, `kanban_products_get`, `kanban_products_create`, `kanban_products_update`, `kanban_products_delete`
+
+### Kanban Reports (7) — [indicafacil.ai]
+
+`kanban_reports_summary`, `kanban_reports_funnel`, `kanban_reports_stage_durations`, `kanban_reports_agent_performance`, `kanban_reports_cfd`, `kanban_reports_aging`, `kanban_reports_timeseries`
 
 ### Kanban Audit Events (2) — [indicafacil.ai]
 
 `kanban_audit_events_list`, `kanban_audit_events_get`
-
-### Kanban Preferences (1) — [indicafacil.ai]
-
-`kanban_preferences_get`
 
 ### Scheduled Messages (4) — [indicafacil.ai]
 

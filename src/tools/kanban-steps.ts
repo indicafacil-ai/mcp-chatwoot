@@ -11,7 +11,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_list",
     {
       title: "List Kanban Steps",
-      description: "[apps-id.indicafacil.app] List all steps in a kanban board",
+      description: "[indicafacil.ai] List all steps in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -31,7 +31,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Create Kanban Step",
       description:
-        "[apps-id.indicafacil.app] Create a new step (column) in a kanban board",
+        "[indicafacil.ai] Create a new step (column) in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -56,8 +56,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_get",
     {
       title: "Get Kanban Step",
-      description:
-        "[apps-id.indicafacil.app] Get a specific step in a kanban board",
+      description: "[indicafacil.ai] Get a specific step in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -79,7 +78,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_update",
     {
       title: "Update Kanban Step",
-      description: "[apps-id.indicafacil.app] Update a step in a kanban board",
+      description: "[indicafacil.ai] Update a step in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -106,8 +105,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_steps_delete",
     {
       title: "Delete Kanban Step",
-      description:
-        "[apps-id.indicafacil.app] Delete a step from a kanban board",
+      description: "[indicafacil.ai] Delete a step from a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -128,7 +126,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Reorder Board Steps",
       description:
-        "[apps-id.indicafacil.app] Set the left-to-right order of a funnel's steps. steps_order must list EVERY step id of the board exactly once: a partial list is rejected.",
+        "[indicafacil.ai] Set the left-to-right order of a funnel's steps. steps_order must list EVERY step id of the board exactly once: a partial list is rejected.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),

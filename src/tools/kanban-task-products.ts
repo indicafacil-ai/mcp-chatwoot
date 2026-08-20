@@ -12,7 +12,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Card Products",
       description:
-        "[apps-id.indicafacil.app] Products attached to one card, with quantity, unit price and discount. This is what gives the card its value.",
+        "[indicafacil.ai] Products attached to one card, with quantity, unit price and discount. This is what gives the card its value.",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -32,7 +32,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Add Product to Card",
       description:
-        "[apps-id.indicafacil.app] Attach a product to a card. The product must belong to the SAME funnel as the card.",
+        "[indicafacil.ai] Attach a product to a card. The product must belong to the SAME funnel as the card.",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -65,7 +65,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Update Card Product",
       description:
-        "[apps-id.indicafacil.app] Change quantity, price or discount of a product already on a card",
+        "[indicafacil.ai] Change quantity, price or discount of a product already on a card",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -93,8 +93,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_task_products_delete",
     {
       title: "Remove Product from Card",
-      description:
-        "[apps-id.indicafacil.app] Detach a product line from a card",
+      description: "[indicafacil.ai] Detach a product line from a card",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),

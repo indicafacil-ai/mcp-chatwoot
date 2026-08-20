@@ -11,7 +11,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_list",
     {
       title: "List Kanban Tasks",
-      description: "[apps-id.indicafacil.app] List tasks in a kanban board",
+      description: "[indicafacil.ai] List tasks in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().optional().describe("Filter by kanban board ID"),
@@ -32,8 +32,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_create",
     {
       title: "Create Kanban Task",
-      description:
-        "[apps-id.indicafacil.app] Create a new task in a kanban board",
+      description: "[indicafacil.ai] Create a new task in a kanban board",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -67,7 +66,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_get",
     {
       title: "Get Kanban Task",
-      description: "[apps-id.indicafacil.app] Get a specific task",
+      description: "[indicafacil.ai] Get a specific task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Task ID"),
@@ -86,7 +85,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_update",
     {
       title: "Update Kanban Task",
-      description: "[apps-id.indicafacil.app] Update a kanban task",
+      description: "[indicafacil.ai] Update a kanban task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Task ID"),
@@ -127,7 +126,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_tasks_delete",
     {
       title: "Delete Kanban Task",
-      description: "[apps-id.indicafacil.app] Delete a kanban task",
+      description: "[indicafacil.ai] Delete a kanban task",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Task ID"),
@@ -147,7 +146,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Move Kanban Task",
       description:
-        "[apps-id.indicafacil.app] Move a kanban task to a different step and/or position",
+        "[indicafacil.ai] Move a kanban task to a different step and/or position",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Task ID"),

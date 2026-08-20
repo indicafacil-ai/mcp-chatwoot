@@ -12,7 +12,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Funnel Products",
       description:
-        "[apps-id.indicafacil.app] The product catalog of one funnel. Products are per funnel, not per account: a card can only carry products from its own board.",
+        "[indicafacil.ai] The product catalog of one funnel. Products are per funnel, not per account: a card can only carry products from its own board.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -32,7 +32,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_products_get",
     {
       title: "Get Funnel Product",
-      description: "[apps-id.indicafacil.app] Read one product of a funnel",
+      description: "[indicafacil.ai] Read one product of a funnel",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -54,8 +54,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_products_create",
     {
       title: "Create Funnel Product",
-      description:
-        "[apps-id.indicafacil.app] Add a product to a funnel's catalog",
+      description: "[indicafacil.ai] Add a product to a funnel's catalog",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -86,7 +85,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_products_update",
     {
       title: "Update Funnel Product",
-      description: "[apps-id.indicafacil.app] Update a product of a funnel",
+      description: "[indicafacil.ai] Update a product of a funnel",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),
@@ -114,7 +113,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Delete Funnel Product",
       description:
-        "[apps-id.indicafacil.app] Delete a product from a funnel's catalog. Prefer archiving when the product already sits on cards.",
+        "[indicafacil.ai] Delete a product from a funnel's catalog. Prefer archiving when the product already sits on cards.",
       inputSchema: {
         account_id: accountId,
         board_id: z.number().describe("Kanban board ID"),

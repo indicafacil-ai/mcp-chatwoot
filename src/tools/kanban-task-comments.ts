@@ -12,7 +12,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "List Card Comments",
       description:
-        "[apps-id.indicafacil.app] Notes on a card, written by people or by AI agents. Internal: the customer never sees them.",
+        "[indicafacil.ai] Notes on a card, written by people or by AI agents. Internal: the customer never sees them.",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -33,7 +33,7 @@ export const register: RegisterFn = (server, client) => {
     {
       title: "Add Card Comment",
       description:
-        "[apps-id.indicafacil.app] Write a note on a card. author_type accepts 'user' or 'ai' only: 'system' is reserved for the platform itself and is rejected.",
+        "[indicafacil.ai] Write a note on a card. author_type accepts 'user' or 'ai' only: 'system' is reserved for the platform itself and is rejected.",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -62,7 +62,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_task_comments_update",
     {
       title: "Update Card Comment",
-      description: "[apps-id.indicafacil.app] Edit the text of a card note",
+      description: "[indicafacil.ai] Edit the text of a card note",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
@@ -85,7 +85,7 @@ export const register: RegisterFn = (server, client) => {
     "kanban_task_comments_delete",
     {
       title: "Delete Card Comment",
-      description: "[apps-id.indicafacil.app] Delete a note from a card",
+      description: "[indicafacil.ai] Delete a note from a card",
       inputSchema: {
         account_id: accountId,
         task_id: z.number().describe("Kanban task (card) ID"),
